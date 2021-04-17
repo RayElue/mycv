@@ -1,0 +1,72 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 95%;
+    margin: 1% auto;
+    overflow-x: hidden;
+}
+
+/* Header */
+header{
+    background-color: #8787ff;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em;
+    margin: 1em;
+    font-family: inherit;
+}
+
+header .myname {
+    text-transform: uppercase;
+    padding: 0.5em;
+    font-weight: 900;
+}
+/* End Of Header */
+
+#sections{
+    padding: 0 4em;
+}
+
+#sections h2{
+    text-transform: capitalize;
+}
+
+.list-items{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1em;
+}
+
+.footer{
+    background-color: #8787ff;
+    padding: 1rem;
+    margin-top: 1em;
+}
+
+/* media query for responsiveness */
+@media only screen and (max-width: 638px){
+    header {
+        flex-wrap: wrap;
+    }
+    .list-items{
+        flex-wrap: wrap;
+    }
+
+    .list-items .top{
+        margin-top: 0;
+        padding-top: 0;
+    }
+}
+
+@media only screen and (max-width: 300px){
+    header .myname{
+        padding: 0;
+        font-weight: 700;
+    }
+}
